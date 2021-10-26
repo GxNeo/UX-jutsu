@@ -101,7 +101,6 @@ async def kang_(message: Message):
             photo = resize_photo(photo)
         if is_anim:
             packname += "_anim"
-            packnick += " (Animated)"
             cmd = "/newanimated"
         exist = False
         try:
