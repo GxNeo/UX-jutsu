@@ -105,7 +105,7 @@ async def handle_afk_incomming(message: Message) -> None:
                 f"**🚶‍♂ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ** \n\n**💬 ʀᴇᴀsᴏɴ :**  <code>{REASON}</code>\n\n"
                 f"**👁 ʟᴀsᴛ sᴇᴇɴ :** `{afk_time}`\n\n"
                 f"-------------- » «» « --------------\n"
-                f"`choice(AFK_REASONS)`"
+                f"`_choice(AFK_REASONS)`"
             )   
         else:
             out_str = choice(AFK_REASONS)
