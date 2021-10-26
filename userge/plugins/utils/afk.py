@@ -105,7 +105,7 @@ async def handle_afk_incomming(message: Message) -> None:
                 f"**🚶‍♂ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ** \n\n**💬 ʀᴇᴀsᴏɴ :**  <code>{REASON}</code>\n\n"
                 f"**👁 ʟᴀsᴛ sᴇᴇɴ :** `{afk_time}`\n\n"
                 f"-------------- » «» « --------------\n"
-                f"`_choice(AFK_REASONS)`"
+                f"`Sorry, I'm not here right now.\nFeel free to talk to my userbot as long as you like.I'll get back to you later`"
             )   
         else:
             out_str = choice(AFK_REASONS)
