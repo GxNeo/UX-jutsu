@@ -94,8 +94,8 @@ async def kang_(message: Message):
         u_name = user.username
         u_name = "@" + u_name if u_name else user.first_name or user.id
         packname = f"a{user.id}_by_{user.username}_{pack}"
-        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name}'s kang pack"
-        packnick = f"{custom_packnick} vol.{pack}"
+        custom_packnick = Config.CUSTOM_PACK_NAME or f"👾 ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 👾 {u_name}"
+        packnick = f"{custom_packnick}〈 {pack} 〉"
         cmd = "/newpack"
         if resize:
             photo = resize_photo(photo)
@@ -123,7 +123,7 @@ async def kang_(message: Message):
                 limit = "50" if is_anim else "120"
                 while limit in msg.text:
                     pack += 1
-                    packname = f"a{user.id}_by_userge_{pack}"
+                    packname = f"a{user.id}_by_GtNero_{pack}"
                     packnick = f"{custom_packnick} Vol.{pack}"
                     if is_anim:
                         packname += "_anim"
