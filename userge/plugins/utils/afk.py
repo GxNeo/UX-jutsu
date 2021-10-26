@@ -102,9 +102,11 @@ async def handle_afk_incomming(message: Message) -> None:
     else:
         if REASON:
             out_str = (
-                f"I'm **AFK** right now.\nReason: <code>{REASON}</code>\n"
-                f"Last Seen: `{afk_time} ago`"
-            )
+                f"**🚶‍♂ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ** \n\n**💬 ʀᴇᴀsᴏɴ :**  <code>{REASON}</code>\n\n"
+                f"**👁 ʟᴀsᴛ sᴇᴇɴ :** `{afk_time}`\n\n"
+                f"-------------- » «» « --------------\n"
+                f"`{random.choice(AFK_REASONS)}`"
+            )   
         else:
             out_str = choice(AFK_REASONS)
         coro_list.append(message.reply(out_str))
